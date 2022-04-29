@@ -100,6 +100,8 @@ Linux 和 Mac 用户需要将源代码第 22，285 行 (selenium_get_url 函数�
 
 `.find('span', {'class':'RichText ztext CopyrightRichText-richText css-14bz7qe'})`   
 
+注意定位前用 view source 查看页面源代码或将页面源代码打印出来，确定其中有你要定位的标签，否则会显示找不到元素。  
+
 定位后可以通过 get_text() 或 get("attribute") 来获取其中的文本或获取某个属性的值，即：    
 
 `.find('span', {'class':'RichText ztext CopyrightRichText-richText css-14bz7qe'}).get_text()`  
