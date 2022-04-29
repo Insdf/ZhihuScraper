@@ -97,7 +97,9 @@ The *span* here is the *tag*, the *class* on the left of the = is the *attribute
 
 This example is:
 
-`.find('span', {'class':'RichText ztext CopyrightRichText-richText css-14bz7qe'})`
+`.find('span', {'class':'RichText ztext CopyrightRichText-richText css-14bz7qe'})`  
+
+Note that before locating, use view source to view the page source code or print out the page source code, and make sure that there is the tag you want to locate, otherwise it will show that the element cannot be found.
 
 After locating, you can use *get_text()* or *get("attribute")* to get the text in it or get the value of an attribute, that is:
 
