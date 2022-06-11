@@ -47,7 +47,7 @@ There is an English version of this article: [README_EN](/README_EN.md)
 # 使用说明
 首先将项目下载到本地。  
 
-Linux 和 Mac 用户需要将源代码第 22，285 行 (selenium_get_url 函数和 save_html 函数) 中的 folder_path 文件路径改成你想要的路径，注意不要去掉 r' '，只将引号中的路径替换掉就可以了，想的话也可以把第 412，436 行 (主程序) 中 print 提示中有关保存路径的内容改掉，注意用两个斜杠 \\\\ 表示 \\。  
+Linux 和 Mac 用户需要将源代码第 22，290 行 (selenium_get_url 函数和 save_html 函数) 中的 folder_path 文件路径改成你想要的路径，注意不要去掉 r' '，只将引号中的路径替换掉就可以了，想的话也可以把第 417，441 行 (主程序) 中 print 提示中有关保存路径的内容改掉，注意用两个斜杠 \\\\ 表示 \\。  
 
 如果你想使用其他浏览器，举个例子，Firefox 浏览器，你需要将第 16，17 行 (即 import 行) 中的 "edge" 改为 "firefox"，将第 72 行 (selenium_get_url函数) 中的 "Edge" 改为 "Firefox"，注意首字母大写。Chrome 和 Safari 同理。对应的 webdriver 下载链接在 [Drivers](https://www.selenium.dev/selenium/docs/api/py/index.html#drivers)  
 
@@ -55,7 +55,7 @@ Linux 和 Mac 用户需要将源代码第 22，285 行 (selenium_get_url 函数�
 
 如果显示的是乱码的话，下载并安装 *VS Code* 并安装 *Python* 和 *Code Runner* 扩展，然后在 *VS Code* 中运行程序 (你可以自己尝试其他编辑器)。对于 *Windows* 用户，打开 Control Panel — Clock and Region — Change data, time or number formats —  Administrative — 将 Language for non-Unicode programs 改为 Chinese simplified — 重启电脑。
 # 已知问题
-1.知乎改版后就爬取不到内容了。你可以先查看知乎上的值和程序中第 262，276 行 (get_content_detail 函数) 中 class 的值 RichText ztext CopyrightRichText-richText css-14bz7qe 一不一样 (方法在后文)，不一样的话将其改掉，注意改的时候不要去掉引号，只改引号内的内容就可以了。    
+1.知乎改版后就爬取不到内容了。你可以先查看知乎上的值和程序中第 262，281 行 (get_content_detail 函数) 中 class 的值 RichText ztext CopyrightRichText-richText css-14bz7qe 一不一样 (方法在后文)，不一样的话将其改掉，注意改的时候不要去掉引号，只改引号内的内容就可以了。    
 
 更改后的值的话，先随便打开一个收藏夹的网址，选中一个回答的内容
 ![](https://pic4.zhimg.com/100/v2-cf3f8259f73913da2e17dee3234f5d3b_r.jpeg)  
