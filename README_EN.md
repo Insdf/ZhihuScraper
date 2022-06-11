@@ -46,7 +46,7 @@ Note that the browser and webdriver versions match.
 # Instructions for Use
 First download the project locally.
 
-Linux and Mac users need to modify the *folder_path* in line 22, 285 of the source code (*selenium_get_url* function and *save_html* function) to the path you want, be careful not to remove r' ', just replace the path in quotation marks. If you want, you can also modify the content about the save path in the *print* prompt in line 412 and 436 (main program), pay attention to use two backslashes \\\\ to represent \\.
+Linux and Mac users need to modify the *folder_path* in line 22, 290 of the source code (*selenium_get_url* function and *save_html* function) to the path you want, be careful not to remove r' ', just replace the path in quotation marks. If you want, you can also modify the content about the save path in the *print* prompt in line 417 and 441 (main program), pay attention to use two backslashes \\\\ to represent \\.
 
 If you want to use other browsers, for example, *Firefox* browser, you need to modify "edge" in lines 16, 17 (ie import lines) to "firefox", and in line 72 (*selenium_get_url* function), modify "Edge" to "Firefox", note the capitalization. The same goes for *Chrome* and *Safari*. The corresponding webdriver download link is at [Drivers](https://www.selenium.dev/selenium/docs/api/py/index.html#drivers)
 
@@ -54,7 +54,7 @@ After modification, Right-click ZhihuCollection_EN.py — Open with — Python, 
 
 If it shows garbage characters in the name of the collection folder, download and install *VS Code* and install *Python* and *Code Runner* extensions, then run the program in *VS Code* (You can try other editors by yourself). For *Windows* users, Open Control Panel — Clock and Region — Change data, time or number formats —  Administrative — Change Language for non-Unicode programs to Chinese simplified — Restart.
 # Known Issues
-1\. After the revision of Zhihu, the content cannot be crawled. You can first check that if the value on Zhihu is different from the value "RichText ztext CopyrightRichText-richText css-14bz7qe" of *class* in line 262 and 276 (*get_content_detail* function) in the program (the instruction is in later section), if it is different, modify it. Be careful not to remove the quotation marks when modifying, just modify the content within the quotation marks.
+1\. After the revision of Zhihu, the content cannot be crawled. You can first check that if the value on Zhihu is different from the value "RichText ztext CopyrightRichText-richText css-14bz7qe" of *class* in line 262 and 281 (*get_content_detail* function) in the program (the instruction is in later section), if it is different, modify it. Be careful not to remove the quotation marks when modifying, just modify the content within the quotation marks.
 
 For the new value, first open a URL of a collection folder, and select the content of an answer.
 ![](https://pic4.zhimg.com/100/v2-cf3f8259f73913da2e17dee3234f5d3b_r.jpeg)
